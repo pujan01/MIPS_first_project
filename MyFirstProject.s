@@ -36,9 +36,14 @@ syscall                     # print 4
 addi $a0, $a0, -2           #  4 -2  = 2
 syscall                     # print 2
 
-addi $a0, $a0, 5           # 2 + 5 = 7
+addi $a0, $a0, 5            # 2 + 5 = 7
 syscall                     # print 7
 
+addi $a0, $a0, -7           # 7 - 7 = 0
+syscall                     # print 0
+
+addi $a0, $a0, 3             # 0 + 3  = 3
+syscall                     # print 7
 
 li $v0, 10 		#Prompting the end of program
 
