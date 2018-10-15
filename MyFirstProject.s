@@ -55,7 +55,7 @@ li $v0, 11        # system call code for printing character = 11
 addi $a0, $a0, 7    # ascii 10 is line feed
 syscall
 
-addi $a0, $a0, 74    # ascii 84 is T (capital letter of the first letter of my last name)
+addi $a0, $a0, 74    # 74 + 10 = 84 in ASCII this is 'T' (capital letter of the first letter of my last name)
 syscall
 
 addi $a0, $a0, 20    # 84 + 20 = 104. this is the ascii code for small 'h'
@@ -70,12 +70,20 @@ syscall
 addi $a0, $a0, -15    # 115 - 12 = 97. this is the ascii code for small 'a'
 syscall
 
+
+
+
 addi $a0, $a0, -53    # 97 - 53 = 44 this is the ascii code for comma symbol
 syscall
 
 addi $a0, $a0, -12    # 44  - 12 = 32. this is the ascii code for space
 syscall
 
+
+
+
+addi $a0, $a0, 48    # 32 + 48 = 80. this is the ascii code for capital 'P'
+syscall
 
 
 li $v0, 10 		#Prompting the end of program
