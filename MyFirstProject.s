@@ -50,6 +50,11 @@ li $v0, 11        # system call code for printing character = 11
 addi $a0, $a0, 7    # ascii 10 is line feed
 syscall
 
+addi $a0, $a0, 74    # ascii 84 is T (the first letter of my last name)
+syscall
+
+
+
 li $v0, 10 		#Prompting the end of program
 
 syscall			# Exit program
