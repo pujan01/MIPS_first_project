@@ -21,17 +21,23 @@ syscall			# call operating system to perform operation
 
 li $v0, 1       # system call code for printing integer = 1
 
-addi $a0, $a0, -64
-syscall
+addi $a0, $a0, -64          # 64 -64 = 0
+syscall                     # print 0
 
-addi $a0, $a0, 2
-syscall
+addi $a0, $a0, 2            # 0 + 2
+syscall                     #print 2
 
-addi $a0, $a0, 6
-syscall
+addi $a0, $a0, 6            # 2 + 6 = 8
+syscall                     # print 8
 
-addi $a0, $a0, -4
-syscall
+addi $a0, $a0, -4           # 8 - 4 = 4
+syscall                     # print 4
+
+addi $a0, $a0, -2           #  4 -2  = 2
+syscall                     # print 2
+
+addi $a0, $a0, 5           # 2 + 5 = 7
+syscall                     # print 7
 
 
 li $v0, 10 		#Prompting the end of program
