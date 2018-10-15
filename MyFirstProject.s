@@ -64,6 +64,16 @@ syscall
 addi $a0, $a0, -7    # 104 - 7 = 97. this is the ascii code for small 'a'
 syscall
 
+addi $a0, $a0, 15    # 97 + 12 = 115. this is the ascii code for small 'p'
+syscall
+
+addi $a0, $a0, -15    # 115 - 12 = 97. this is the ascii code for small 'a'
+syscall
+
+
+
+
+
 li $v0, 10 		#Prompting the end of program
 
 syscall			# Exit program
