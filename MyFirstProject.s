@@ -70,6 +70,9 @@ syscall
 addi $a0, $a0, -15    # 115 - 12 = 97. this is the ascii code for small 'a'
 syscall
 
+addi $a0, $a0, -53    # 97 - 53 = 44 this is the ascii code for comma symbol
+syscall
+
 
 
 
