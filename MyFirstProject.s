@@ -45,15 +45,24 @@ syscall                     # print 0
 addi $a0, $a0, 3             # 0 + 3  = 3
 syscall                     # print 3
 
+
+
+
+
+
 li $v0, 11        # system call code for printing character = 11
 
 addi $a0, $a0, 7    # ascii 10 is line feed
 syscall
 
-addi $a0, $a0, 74    # ascii 84 is T (the first letter of my last name)
+addi $a0, $a0, 74    # ascii 84 is T (capital letter of the first letter of my last name)
 syscall
 
+addi $a0, $a0, 20    # 84 + 20 = 104. this is the ascii code for small 'h'
+syscall
 
+addi $a0, $a0, -7    # 104 - 7 = 97. this is the ascii code for small 'a'
+syscall
 
 li $v0, 10 		#Prompting the end of program
 
