@@ -43,7 +43,12 @@ addi $a0, $a0, -7           # 7 - 7 = 0
 syscall                     # print 0
 
 addi $a0, $a0, 3             # 0 + 3  = 3
-syscall                     # print 7
+syscall                     # print 3
+
+li $v0, 11        # system call code for printing character = 11
+
+addi $a0, $a0, 7    # ascii 10 is line feed
+syscall
 
 li $v0, 10 		#Prompting the end of program
 
