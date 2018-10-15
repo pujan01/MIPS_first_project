@@ -73,7 +73,8 @@ syscall
 addi $a0, $a0, -53    # 97 - 53 = 44 this is the ascii code for comma symbol
 syscall
 
-
+addi $a0, $a0, -10    # 44  -10 = 32. this is the ascii code for space
+syscall
 
 
 
