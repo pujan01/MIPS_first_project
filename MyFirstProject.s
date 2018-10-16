@@ -85,6 +85,11 @@ syscall
 addi $a0, $a0, 48    # 32 + 48 = 80. this is the ascii code for capital 'P'
 syscall
 
+addi $a0, $a0, 37    # 80 + 37 = 117. this is the ascii code for small 'u'
+syscall
+
+addi $a0, $a0, -11    # 117 - 11 = 106. this is the ascii code for small 'j'
+syscall
 
 li $v0, 10 		#Prompting the end of program
 
