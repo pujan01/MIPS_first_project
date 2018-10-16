@@ -1,4 +1,4 @@
-# PROGRAM: My First Project!
+# PROGRAM: My First MIPS Project!
 
 #   @02842703
 #   Thapa, Pujan
@@ -6,6 +6,9 @@
 
 .data 			# Data declaration section 
 .text 			# Assembly language instructions
+
+
+#...................................................
 
 
 main:			# Start of code section
@@ -20,6 +23,10 @@ syscall			# call operating system to perform operation
 			    # syscall takes its arguments from $a0, $a1, ...
 
 li $v0, 1       # system call code for printing integer = 1
+
+
+#..............................................
+#printing the digits of my ID
 
 addi $a0, $a0, -64          # 64 -64 = 0
 syscall                     # print 0
@@ -46,9 +53,8 @@ addi $a0, $a0, 3             # 0 + 3  = 3
 syscall                     # print 3
 
 
-
-
-
+# ............................................................
+# printing the last name "Thapa"
 
 li $v0, 11        # system call code for printing character = 11
 
@@ -69,18 +75,21 @@ syscall
 
 addi $a0, $a0, -15    # 115 - 12 = 97. this is the ascii code for small 'a'
 syscall
+#.................................................
 
 
-
+# printing comma and space
 
 addi $a0, $a0, -53    # 97 - 53 = 44 this is the ascii code for comma symbol
 syscall
 
 addi $a0, $a0, -12    # 44  - 12 = 32. this is the ascii code for space
 syscall
+#....................................................
 
 
 
+#       printing the first name "Pujan"
 
 addi $a0, $a0, 48    # 32 + 48 = 80. this is the ascii code for capital 'P'
 syscall
@@ -97,6 +106,8 @@ syscall
 addi $a0, $a0, 13    # 97 + 13 = 110. this is the ascii code for small 'n'
 syscall
 
-li $v0, 10 		#Prompting the end of program
+#..........................................................
 
+
+li $v0, 10 		#Prompting the end of program
 syscall			# Exit program
