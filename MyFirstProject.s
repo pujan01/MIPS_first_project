@@ -91,6 +91,12 @@ syscall
 addi $a0, $a0, -11    # 117 - 11 = 106. this is the ascii code for small 'j'
 syscall
 
+addi $a0, $a0, -9    # 106 - 9 = 97. this is the ascii code for small 'a'
+syscall
+
+addi $a0, $a0, 13    # 97 + 13 = 110. this is the ascii code for small 'n'
+syscall
+
 li $v0, 10 		#Prompting the end of program
 
 syscall			# Exit program
