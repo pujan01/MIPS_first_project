@@ -52,7 +52,6 @@ syscall                     # print 0
 addi $a0, $a0, 3             # 0 + 3  = 3
 syscall                     # print 3
 
-
 # ............................................................
 # printing the last name "Thapa"
 
